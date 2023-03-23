@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import NFTmodal from "./nftModal";
 
 export default function collection() {
   const collections = [
@@ -42,7 +43,8 @@ export default function collection() {
       <div className="px-5">
         <h1 className="text-center mb-8">
           <span className="block text-2xl mb-2">Welcome to</span>
-          <span className="block text-4xl font-bold">RealFT</span>
+          <span className="block text-4xl font-bold">Proof of Deep Work</span>
+          <NFTmodal />
         </h1>
         {collections.map((val, i) => {
           return (
