@@ -1,4 +1,5 @@
 import React from "react";
+import WorkForm from "./WorkForm";
 
 export default function collectionModal() {
   return (
@@ -20,8 +21,7 @@ export default function collectionModal() {
           </label>
           <div className="space-y-3">
             <div className="flex space-x-4">
-              <input className="placeholder-shown:border-gray-50 w-50" placeholder="Transfer Address" />
-              <button className="shadow bg-base-100 rounded-box w-32">Create NFT</button>
+              <WorkForm />
             </div>
           </div>
         </label>
