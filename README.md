@@ -1,3 +1,51 @@
+# Proof of Deep Work
+
+## Problem: 
+People are scattered and intellectually stunted by TikTok and social media. 60% of Americans are living paycheck to paycheck. Many work multiple jobs and have little time to commit to deep work.
+
+## Solution: 
+Proof of Deep Work (PODW) replaces common UBI ideas which just pays people to do nothing by minting NFT’s from deep work events such as coding, mathematics, writing, research, etc. 
+
+## Product:
+Based on Proof of Meditation which won ETH Denver in 2022. 
+https://www.youtube.com/watch?v=C5Hnc7F5L0g
+
+What is Deep Work? https://asana.com/resources/what-is-deep-work
+
+PODW will reward people based on time as well as deep work done. PODW will also reward deep work providers who create learning tracks and analyze the work of users.
+
+
+
+## Users: 
+Deep Worker: paid to do deep work
+Deep Work Provider: Educators, Institutions, paid by creating the work that deep workers do.
+
+DataTypes to generate NFT based on deepwork Session)
+timeStart               (Color based on Time of Day)
+timeFinished	      (Color based on Time of Day)
+workType 	      (Math, Coding, Writing, Research, etc) Background image?
+Milestone              (Finishing a module, grade, etc)
+details                    (Details about Work)
+platform	      (Khan Academy, Alchemy University)	
+UserAvatar	      (User avatar custom or generated) 
+
+For MVP: One Avatar type, one work type (coding)
+
+All these data points would be inputs to generate an NFT for each deepwork session
+
+
+Potential Deep Work Providers: Udemy, Khan Academy, Alchemy University, Polkadot, etc.
+
+Partners for time tracking: https://www.clevguard.com/reviews/apps-to-limit-social-media/
+
+Source of Funds: GiveEth, GivingBlock, Government Grants for Education, etc.
+
+Value Delivered: Proof that students and adults are engaging in deep work to train for future jobs, entrepreneurship, etc.
+
+Market: US Education Market is $1.4 TRILLION
+https://www.globenewswire.com/news-release/2021/01/06/2153920/0/en/U-S-Education-Market-Size-Share-Predicted-to-be-Worth-USD-1-949-99-Billion-By-2025-Facts-Factors.html
+
+
 # Scaffold-Eth 2
 
 ⚠️ This project is currently under active development. Things might break. Feel free to check the open issues & create new ones.
