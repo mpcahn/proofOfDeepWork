@@ -18,7 +18,7 @@ const WorkForm = () => {
     <form onSubmit={handleSubmit}>
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block mb-2 text-gray-600 font-bold">Time Start:</label>
+          <label className="block mb-2 text-gray-600 font-bold">Time Start (hh:mm):</label>
           <input
             type="text"
             className={`w-full py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400`}
@@ -27,7 +27,7 @@ const WorkForm = () => {
           />
         </div>
         <div>
-          <label className="block mb-2 text-gray-600 font-bold">Time Finished:</label>
+          <label className="block mb-2 text-gray-600 font-bold">Time Finished (hh:mm):</label>
           <input
             type="text"
             className={`w-full py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400`}
