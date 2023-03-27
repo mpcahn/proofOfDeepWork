@@ -5,9 +5,9 @@ const WorkForm = () => {
   const [timeStart, setTimeStart] = useState("");
   const [timeFinished, setTimeFinished] = useState("");
   const [workType, setWorkType] = useState("");
+  const [platform, setPlatform] = useState("");
   const [milestone, setMilestone] = useState("");
   const [details, setDetails] = useState("");
-  const [platform, setPlatform] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -51,6 +51,20 @@ const WorkForm = () => {
         </select>
       </div>
       <div className="mt-4">
+        <label className="block mb-2 text-gray-600 font-bold">Platform:</label>
+        <select
+          className="w-full py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+          value={workType}
+          onChange={e => setPlatform(e.target.value)}
+        >
+          <option value="Khan Academy">Khan Academy</option>
+          <option value="Alchemy University">Alchemy University</option>
+          <option value="Udemy">Udemy</option>
+          <option value="Self Directed">Self Directed</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div className="mt-4">
         <label className="block mb-2 text-gray-600 font-bold">Milestone:</label>
         <input
           type="text"
@@ -67,15 +81,6 @@ const WorkForm = () => {
           value={details}
           onChange={e => setDetails(e.target.value)}
         ></textarea>
-      </div>
-      <div className="mt-4">
-        <label className="block mb-2 text-gray-600 font-bold">Platform:</label>
-        <input
-          type="text"
-          className="w-full py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
-          value={platform}
-          onChange={e => setPlatform(e.target.value)}
-        />
       </div>
       <button
         type="submit"
