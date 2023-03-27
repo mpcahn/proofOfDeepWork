@@ -20,7 +20,7 @@ export default function collectionModal() {
             ✕
           </label>
           <div className="space-y-3">
-            <div className="flex space-x-4">
+            <div className="flex-center space-x-4">
               <WorkForm />
             </div>
           </div>

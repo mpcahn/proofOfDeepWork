@@ -11,25 +11,25 @@ const WorkForm = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Submitted!");
+    console.log({ timeStart, timeFinished, workType, milestone, details, platform });
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block mb-2 text-gray-600 font-bold">Time Start (hh:mm):</label>
+          <label className="block mb-2 text-gray-600 font-bold">Time Start:</label>
           <input
-            type="text"
+            type="time"
             className={`w-full py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400`}
             value={timeStart}
             onChange={e => setTimeStart(e.target.value)}
           />
         </div>
         <div>
-          <label className="block mb-2 text-gray-600 font-bold">Time Finished (hh:mm):</label>
+          <label className="block mb-2 text-gray-600 font-bold">Time Finished:</label>
           <input
-            type="text"
+            type="time"
             className={`w-full py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400`}
             value={timeFinished}
             onChange={e => setTimeFinished(e.target.value)}
@@ -38,12 +38,17 @@ const WorkForm = () => {
       </div>
       <div className="mt-4">
         <label className="block mb-2 text-gray-600 font-bold">Work Type:</label>
-        <input
-          type="text"
+        <select
           className="w-full py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
           value={workType}
           onChange={e => setWorkType(e.target.value)}
-        />
+        >
+          <option value="Math">Math</option>
+          <option value="Coding">Coding</option>
+          <option value="Writing">Writing</option>
+          <option value="Research">Research</option>
+          <option value="Other">Other</option>
+        </select>
       </div>
       <div className="mt-4">
         <label className="block mb-2 text-gray-600 font-bold">Milestone:</label>
